@@ -6,8 +6,7 @@ const MyComponent = () => {
     const [text, setText] = React.useState('');
 
     return (
-        <TextInput onFocus style={styles.container}
-            
+        <TextInput style={styles.container}
             theme={{ colors: { primary: 'red' } }}
             placeholder = "Nome"
             mode='flat'
