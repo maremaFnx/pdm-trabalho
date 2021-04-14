@@ -10,7 +10,7 @@ export default function App() {
     <SafeAreaView style={styles.container} >
        <StatusBar
         barStyle = 'light-content'
-        backgroundColor = "#1a1a1a"
+        backgroundColor = "#0086b3"
         hidden = {false}
         translucent = {false}
         networkActivityIndicatorVisible = {true}
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#000'
+    backgroundColor: '#4dd2ff'
   },
   box: {
     width: '80%',

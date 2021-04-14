@@ -7,9 +7,9 @@ const MyComponent = () => {
 
     return (
         <TextInput style={styles.container}
-            theme={{ colors: { primary: 'red' } }}
+            theme={{ colors: { primary: '#0099cc' } }}
             placeholder = "Nome"
-            mode='flat'
+            mode='outlined'
             value={text}
             onChangeText={text => setText(text)}
             
