@@ -10,13 +10,13 @@ export default function App() {
     <SafeAreaView style={styles.container} >
        <StatusBar
         barStyle = 'light-content'
-        backgroundColor = "#0086b3"
+        backgroundColor = "#0099cc"
         hidden = {false}
         translucent = {false}
         networkActivityIndicatorVisible = {true}
       />
       <Image style={styles.box} source={require('../images/Logo.png')} />
-      <Input/>
+      <Input />
       <Botao/>
     </SafeAreaView>
   );
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#4dd2ff'
+    backgroundColor: '#33ccff'
   },
   box: {
     width: '80%',

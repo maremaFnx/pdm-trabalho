@@ -1,5 +1,7 @@
+import { StyleSheet, Text, View, SafeAreaView, Image, ImageBackground } from 'react-native';
+import React from 'react'
 export default props =>{
-    props.nick,
+    props.nome,
     props.ideology,
     props.percentage
     return null
