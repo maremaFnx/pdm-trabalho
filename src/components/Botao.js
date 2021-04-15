@@ -1,11 +1,16 @@
 import * as React from 'react';
 import { Button } from 'react-native-paper';
-import Jogador from './Jogador'
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-const MyComponent = () => (
-  <Button color='#0099cc' icon="play" mode="contained" onPress={() => console.log()}>
-    JOGAR
-  </Button>
-);
-
-export default MyComponent;
+export default function Botao( props ){
+  return (
+      <Button
+        color={"#0099cc"}
+        icon="play" 
+        mode="contained"
+        onPress={() => props.navigation.navigate('Instrucoes')}
+      > JOGAR </Button>
+    
+  );
+}

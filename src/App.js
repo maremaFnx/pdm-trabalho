@@ -1,40 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Image, ImageBackground } from 'react-native';
-import Input from './components/TextInput'
-import Botao from './components/Botao'
-import Jogador from './components/Jogador'
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+
+import Inicio from './screens/Inicio';
+import Instrucoes from './screens/Instrucoes';
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container} >
-       <StatusBar
-        barStyle = 'light-content'
-        backgroundColor = "#0099cc"
-        hidden = {false}
-        translucent = {false}
-        networkActivityIndicatorVisible = {true}
-      />
-      <Image style={styles.box} source={require('../images/Logo.png')} />
-      <Input />
-      <Botao/>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Inicio">
+        <Stack.Screen name="Inicio" component={Inicio} options={{headerShown: false}} />
+        <Stack.Screen name="Instrucoes" component={Instrucoes} />
+
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#33ccff'
-  },
-  box: {
-    width: '80%',
-    height: '50%',
-  },
-  fundo: {
-    flex: 1,
-    resizeMode: "cover"
-  },
-});
