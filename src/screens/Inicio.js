@@ -1,13 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, SafeAreaView, Image } from 'react-native';
+import { StyleSheet, SafeAreaView, Image, Text } from 'react-native';
 import { Button } from 'react-native-paper';
 import Input from '../components/TextInput'
+import Cronometro from '../components/Cronometro';
 
 
 export default function Inicio(props) {
   return (
     <SafeAreaView style={styles.container} >
+  
       <StatusBar
         barStyle='light-content'
         backgroundColor="#0099cc"
@@ -23,7 +25,7 @@ export default function Inicio(props) {
         color={"#0099cc"}
         icon="play"
         mode="contained"
-        onPress={() => props.navigation.navigate('Instrucoes')}
+        onPress={() => props.navigation.navigate('Instruções')}
       > JOGAR </Button>
     </SafeAreaView>
   );
