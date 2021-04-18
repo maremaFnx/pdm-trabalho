@@ -5,7 +5,7 @@ import { Button, TextInput } from 'react-native-paper';
 import { AuthContext } from '../contexts/auth';
 
 export default function Calc() {
-    const [num, setNum, num_2, setNum_2] = useState(0);
+    const [num, setNum] = useState('');
  return (
    <View style={styles.container}>
        <TextInput 
@@ -14,12 +14,7 @@ export default function Calc() {
         value={num}
         onChangeText={num => setNum(num)}
       />
-      <TextInput 
-        style={styles.input}
-        placeholder='Numero 2'
-        value={num_2}
-        onChangeText={num_2 => setNum_2(num)}
-      />
+    
    </View>
   );
 }
