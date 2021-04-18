@@ -5,14 +5,14 @@ import { Button, Appbar } from 'react-native-paper'
 import { AuthContext } from '../contexts/auth';
 
 
-export default function Tela01({ navigation }) {
+export default function Tela03({ navigation }) {
     const { setPontuacao, pontuacao } = useContext(AuthContext);
     function answer_ok() {
         setPontuacao(pontuacao + 10)
-        navigation.navigate('Tela02')
+        navigation.navigate('Fim')
     }
     function answer_wr() {
-        navigation.navigate('Tela02')
+        navigation.navigate('Fim')
     }
     return (
         <>
@@ -29,8 +29,8 @@ export default function Tela01({ navigation }) {
                 />
                 <View style={[styles.box]} >
                     <Image style={{ width: 350, height: 350, borderRadius: 20, margin: 20 }}
-                        source={require('../images/famosos/tom_hanks_d.jpg')} />
-                    <Button
+                        source={require('../images/famosos/bolso_d.jpg')} />
+                     <Button
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
@@ -64,7 +64,7 @@ export default function Tela01({ navigation }) {
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
-                        onPress={answer_ok}
+                        onPress={answer_wr}
                     > CLEITON DO PASTEL </Button>
 
                 </View>

@@ -1,17 +1,30 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, SafeAreaView, Image, Text } from 'react-native';
-import { Button } from 'react-native-paper';
-import Input from '../components/TextInput'
-import Cronometro from '../components/Cronometro';
+import React, { useContext, useState } from 'react';
+import { StyleSheet, SafeAreaView, Image} from 'react-native';
+import { Button, TextInput } from 'react-native-paper';
+import { AuthContext } from '../contexts/auth';
 
-
-export default function Inicio(props) {
+export default function Inicio({ navigation }) {
+  const {listaJogador, setListaJogador, setPontuacao} = useContext(AuthContext);
+  const [nome, setNome] = useState('');
+  function listAdd(){
+      if(nome !== ""){
+        let data = {
+          nome: nome,
+          pontuacao: 0
+        }
+        setPontuacao(data.pontuacao)
+        setListaJogador((oldArray) => [...oldArray, data]);
+        navigation.navigate('Instrucoes')
+      }else{
+        alert("PREENCHE O NOME FDP")
+      }
+  }
   return (
     <SafeAreaView style={styles.container} >
-  
+
       <StatusBar
-        barStyle='light-content'
+        style="light"
         backgroundColor="#0099cc"
         hidden={false}
         translucent={false}
@@ -20,12 +33,17 @@ export default function Inicio(props) {
       <Image
         style={styles.box} source={require('../images/Logo.png')}
       />
-      <Input placeholder={"Nome"} />
+      <TextInput 
+        style={styles.input}
+        placeholder='Nome'
+        value={nome}
+        onChangeText={nome => setNome(nome)}
+      />
       <Button
-        color={"#0099cc"}
+        color="#0099cc"
         icon="play"
         mode="contained"
-        onPress={() => props.navigation.navigate('Instruções')}
+        onPress={listAdd}
       > JOGAR </Button>
     </SafeAreaView>
   );
@@ -43,5 +61,11 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '40%',
   },
+  input: {
+    width: '90%',
+    justifyContent: 'center',
+    margin: 20,
+
+  }
 
 });
