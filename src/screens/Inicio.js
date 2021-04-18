@@ -7,6 +7,9 @@ import { AuthContext } from '../contexts/auth';
 export default function Inicio({ navigation }) {
   const {listaJogador, setListaJogador, setPontuacao} = useContext(AuthContext);
   const [nome, setNome] = useState('');
+  function calculadora(){
+    navigation.navigate('Calc')
+  }
   function listAdd(){
       if(nome !== ""){
         let data = {
@@ -17,8 +20,10 @@ export default function Inicio({ navigation }) {
         setListaJogador((oldArray) => [...oldArray, data]);
         navigation.navigate('Instrucoes')
       }else{
-        alert("PREENCHE O NOME FDP")
+        alert("Por favor preencha um nome.")
       }
+
+      
   }
   return (
     <SafeAreaView style={styles.container} >
@@ -45,6 +50,13 @@ export default function Inicio({ navigation }) {
         mode="contained"
         onPress={listAdd}
       > JOGAR </Button>
+      <Button
+        style={{margin:20}}
+        color="#0099cc"
+        icon={{ source: { uri: 'https://cdn.icon-icons.com/icons2/37/PNG/512/calculator_3534.png' }, direction: 'rtl' }}
+        mode="contained"
+        onPress={calculadora}
+      > PRECISANDO CALCULAR UM CUBO? </Button>
     </SafeAreaView>
   );
 }

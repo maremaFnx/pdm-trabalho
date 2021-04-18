@@ -8,6 +8,7 @@ import Tela02 from './screens/Tela02'
 import Tela03 from './screens/Tela03'
 import Fim from './screens/Fim'
 import AuthProvider from './contexts/auth';
+import Calc from './screens/Calculadora';
 
 const Stack = createStackNavigator();
 
@@ -24,6 +25,7 @@ export default function App() {
             <Stack.Screen name="Tela01" component={Tela01} options={{ headerShown: false }} />
             <Stack.Screen name="Tela02" component={Tela02} options={{ headerShown: false }} />
             <Stack.Screen name="Tela03" component={Tela03} options={{ headerShown: false }} />
+            <Stack.Screen name="Calc" component={Calc} options={{ headerShown: false }} />
  
 
 
