@@ -5,8 +5,8 @@ import { Button, TextInput } from 'react-native-paper';
 import { AuthContext } from '../contexts/auth';
 
 export default function Inicio({ navigation }) {
-  const {listaJogador, setListaJogador, setPontuacao} = useContext(AuthContext);
-  const [nome, setNome] = useState('');
+  const {listaJogador, setListaJogador, setPontuacao, nome, setNome} = useContext(AuthContext);
+
   function calculadora(){
     navigation.navigate('Calc')
   }
@@ -38,7 +38,8 @@ export default function Inicio({ navigation }) {
       <Image
         style={styles.box} source={require('../images/Logo.png')}
       />
-      <TextInput 
+      <TextInput
+      theme={{ colors: { primary: "#0099cc" } }} 
         style={styles.input}
         placeholder='Nome'
         value={nome}
@@ -56,7 +57,7 @@ export default function Inicio({ navigation }) {
         icon={{ source: { uri: 'https://cdn.icon-icons.com/icons2/37/PNG/512/calculator_3534.png' }, direction: 'rtl' }}
         mode="contained"
         onPress={calculadora}
-      > PRECISANDO CALCULAR UM CUBO? </Button>
+      > PRECISANDO CALCULAR O VOLUME DE UM CILINDRO? </Button>
     </SafeAreaView>
   );
 }

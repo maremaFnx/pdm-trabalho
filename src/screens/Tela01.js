@@ -34,38 +34,38 @@ export default function Tela01({ navigation }) {
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
-                        onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
+                        onPress={answer_wr}
+                    > DONALD TRUMP </Button>
                     <Button
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
                         onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
+                    > TOM HANKS </Button>
                     <Button
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
-                        onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
+                        onPress={answer_wr}
+                    > SILVIO SANTOS </Button>
                     <Button
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
-                        onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
+                        onPress={answer_wr}
+                    > CLEBER ATALA </Button>
                     <Button
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
-                        onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
+                        onPress={answer_wr}
+                    > RENATO GARCIA </Button>
                     <Button
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
-                        onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
+                        onPress={answer_wr}
+                    > MONARK </Button>
 
                 </View>
 

@@ -1,13 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useContext } from 'react';
-import { StyleSheet, SafeAreaView, View, Text } from 'react-native';
+import { StyleSheet, SafeAreaView, Image, Text } from 'react-native';
 import { Button } from 'react-native-paper';
 import { AuthContext } from '../contexts/auth';
 
 
 export default function Aleluia({ navigation }) {
-    const { setPontuacao, pontuacao } = useContext(AuthContext);
-
+    const { setPontuacao, pontuacao, nome } = useContext(AuthContext);
+    const {} = useContext(AuthContext);
     return (
         <>
             <SafeAreaView style={styles.container} >
@@ -18,8 +18,11 @@ export default function Aleluia({ navigation }) {
                     translucent={false}
                     networkActivityIndicatorVisible={true}
                 />
-                <Text style={styles.texto}>SUA PONTUAÇÃO FOI DE:</Text>
-                <Text style={styles.texto_d} >{pontuacao}</Text>
+                <Image
+                    style={styles.box} source={require('../images/Congrats.png')}
+                />
+                <Text style={styles.texto}>Parabéns {nome}! Sua pontução foi de:</Text>
+                <Text style={styles.texto} >{pontuacao}</Text>
 
                 <Button
                     color="#0099cc"
@@ -42,22 +45,17 @@ const styles = StyleSheet.create({
         backgroundColor: '#33ccff'
     },
     box: {
+        margin: 20,
         flex: 0.5,
-        width: '100%',
-        height: '40%',
+        width: '66%',
+       
     },
     texto: {
         color: 'white',
-        fontWeight:'bold',
+        fontWeight: 'bold',
         fontSize: 40,
         margin: 20,
         textAlign: 'center'
-     },
-     texto_d: {
-        color: 'white',
-        fontWeight:'bold',
-        fontSize: 30,
-        margin: 20
-     }
+    }
 
 });

@@ -30,42 +30,42 @@ export default function Tela02({ navigation }) {
                 <View style={[styles.box]} >
                     <Image style={{ width: 350, height: 350, borderRadius: 20, margin: 20 }}
                         source={require('../images/famosos/trump_d.jpg')} />
-                    <Button
+                     <Button
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
                         onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
+                    > DONALD TRUMP </Button>
                     <Button
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
-                        onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
+                        onPress={answer_wr}
+                    > TOM HANKS </Button>
                     <Button
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
-                        onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
+                        onPress={answer_wr}
+                    > SILVIO SANTOS </Button>
                     <Button
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
-                        onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
+                        onPress={answer_wr}
+                    > CLEBER ATALA </Button>
                     <Button
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
-                        onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
+                        onPress={answer_wr}
+                    > RENATO GARCIA </Button>
                     <Button
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
-                        onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
+                        onPress={answer_wr}
+                    > MONARK </Button>
 
                 </View>
 

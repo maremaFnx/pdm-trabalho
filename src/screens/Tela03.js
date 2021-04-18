@@ -30,42 +30,42 @@ export default function Tela03({ navigation }) {
                 <View style={[styles.box]} >
                     <Image style={{ width: 350, height: 350, borderRadius: 20, margin: 20 }}
                         source={require('../images/famosos/bolso_d.jpg')} />
-                     <Button
+                      <Button
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
-                        onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
-                    <Button
-                        style={{ width: 350, borderRadius: 20, margin: 10 }}
-                        color={"black"}
-                        mode="contained"
-                        onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
-                    <Button
-                        style={{ width: 350, borderRadius: 20, margin: 10 }}
-                        color={"black"}
-                        mode="contained"
-                        onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
-                    <Button
-                        style={{ width: 350, borderRadius: 20, margin: 10 }}
-                        color={"black"}
-                        mode="contained"
-                        onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
-                    <Button
-                        style={{ width: 350, borderRadius: 20, margin: 10 }}
-                        color={"black"}
-                        mode="contained"
-                        onPress={answer_ok}
-                    > CLEITON DO PASTEL </Button>
+                        onPress={answer_wr}
+                    > THE ROCK </Button>
                     <Button
                         style={{ width: 350, borderRadius: 20, margin: 10 }}
                         color={"black"}
                         mode="contained"
                         onPress={answer_wr}
-                    > CLEITON DO PASTEL </Button>
+                    >  PRINCE </Button>
+                    <Button
+                        style={{ width: 350, borderRadius: 20, margin: 10 }}
+                        color={"black"}
+                        mode="contained"
+                        onPress={answer_wr}
+                    > ROBERTO JUSTUS </Button>
+                    <Button
+                        style={{ width: 350, borderRadius: 20, margin: 10 }}
+                        color={"black"}
+                        mode="contained"
+                        onPress={answer_ok}
+                    > BOLSONARO </Button>
+                    <Button
+                        style={{ width: 350, borderRadius: 20, margin: 10 }}
+                        color={"black"}
+                        mode="contained"
+                        onPress={answer_wr}
+                    > PAULO ANDRE </Button>
+                    <Button
+                        style={{ width: 350, borderRadius: 20, margin: 10 }}
+                        color={"black"}
+                        mode="contained"
+                        onPress={answer_wr}
+                    > ROBERTO MARINHO </Button>
 
                 </View>
 

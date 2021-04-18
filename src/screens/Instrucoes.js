@@ -38,9 +38,8 @@ export default function Instucoes({navigation}) {
         </Card>
         <Card style={styles.card}>
           <Card.Content>
-            <Title>Tempo.</Title>
-            <Paragraph>Assim que você chegar no artista, começa a contar um cronometro, esse cronometro é acumulativo, ou seja
-            ele conta seu tempo total nos desafios, quanto mais demorar, mais pontos você perde.
+            <Title>Atenção</Title>
+            <Paragraph>Se você clicar no botão voltar, perderá toda a sua pontuação!
           </Paragraph>
           </Card.Content>
         </Card>
