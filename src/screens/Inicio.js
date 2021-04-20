@@ -57,7 +57,7 @@ export default function Inicio({ navigation }) {
         icon={{ source: { uri: 'https://cdn.icon-icons.com/icons2/37/PNG/512/calculator_3534.png' }, direction: 'rtl' }}
         mode="contained"
         onPress={calculadora}
-      > PRECISANDO CALCULAR O VOLUME DE UM CILINDRO? </Button>
+      >  CALCULAR FORÇA ELÉTRICA </Button>
     </SafeAreaView>
   );
 }
