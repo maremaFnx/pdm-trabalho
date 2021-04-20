@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, SafeAreaView, Text, View, FlatList, ScrollView } from 'react-native';
+import { StyleSheet, SafeAreaView, Text, View, FlatList } from 'react-native';
 import { TextInput, Appbar, Button } from 'react-native-paper';
 
 
@@ -65,8 +65,8 @@ export default function Calc({navigation, id}) {
         <TextInput style={styles.input}
           theme={{ colors: { primary: "#0099cc" } }}
           label="D"
-          value={text_B}
-          onChangeText={text_C => setText_C(text_c)}
+          value={text_C}
+          onChangeText={text_C => setText_C(text_C)}
 
         />
         <Button
