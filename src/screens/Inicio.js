@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { StyleSheet, SafeAreaView, Image} from 'react-native';
 import { Button, TextInput } from 'react-native-paper';
 import { AuthContext } from '../contexts/auth';

@@ -25,8 +25,7 @@ export default function Calc({navigation, id}) {
 
     setValores((oldArray) => [...oldArray, valor]);
     setValores_maiores(valores.filter(maiores))
-    console.log('valores_maiores', valores_maiores)
-    console.log('valores', valores)
+   
 
   }
 
